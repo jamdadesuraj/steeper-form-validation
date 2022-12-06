@@ -1,0 +1,748 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="main">
+      <form id="multistep_form">
+        <!-- progressbar -->
+        <ul id="progress_header">
+          <li class="active"></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+        <!-- Step 01 -->
+        <div class="multistep-box">
+          <div class="title-box">
+            <h2>Basic Information</h2>
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <p>
+                <label for="" class="form-label text-dark"> Name *</label>
+                <input
+                  type="text"
+                  name="fname"
+                  placeholder="First Name"
+                  id="fname"
+                />
+                <span id="error-fname"></span>
+              </p>
+            </div>
+            <div class="col-md-6">
+              <p>
+                <label for="" class="form-label text-dark"
+                  >Email Address *</label
+                >
+                <input
+                  type="text"
+                  name="email"
+                  placeholder="Email"
+                  id="email"
+                />
+                <span id="error-email"></span>
+              </p>
+            </div>
+            <div class="col-md-6">
+              <p>
+                <label for="" class="form-label text-dark"
+                  >Phone Number *</label
+                >
+                <input type="text" name="" placeholder="Phone No" id="phone" />
+                <span id="error-phone"></span>
+              </p>
+            </div>
+            <div class="col-md-6">
+              <p>
+                <label for="" class="form-label text-dark">City *</label>
+                <input type="text" name="" placeholder="City" id="" />
+                <span id="error-email"></span>
+              </p>
+            </div>
+            <div class="col-md-6">
+              <p>
+                <label for="" class="form-label text-dark">State *</label>
+                <select
+                  class="form-control form-select"
+                  id="state"
+                  name="state"
+                  required
+                >
+                  <option value="">--Select State--</option>
+                  <option value="Andhra Pradesh">Andhra Pradesh</option>
+                  <option value="Andaman and Nicobar Islands">
+                    Andaman and Nicobar Islands
+                  </option>
+                  <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                  <option value="Assam">Assam</option>
+                  <option value="Bihar">Bihar</option>
+                  <option value="Chandigarh">Chandigarh</option>
+                  <option value="Chhattisgarh">Chhattisgarh</option>
+                  <option value="Dadar and Nagar Haveli">
+                    Dadar and Nagar Haveli
+                  </option>
+                  <option value="Daman and Diu">Daman and Diu</option>
+                  <option value="Delhi">Delhi</option>
+                  <option value="Lakshadweep">Lakshadweep</option>
+                  <option value="Puducherry">Puducherry</option>
+                  <option value="Goa">Goa</option>
+                  <option value="Gujarat">Gujarat</option>
+                  <option value="Haryana">Haryana</option>
+                  <option value="Himachal Pradesh">Himachal Pradesh</option>
+                  <option value="Jammu and Kashmir">Jammu and Kashmir</option>
+                  <option value="Jharkhand">Jharkhand</option>
+                  <option value="Karnataka">Karnataka</option>
+                  <option value="Kerala">Kerala</option>
+                  <option value="Madhya Pradesh">Madhya Pradesh</option>
+                  <option value="Maharashtra">Maharashtra</option>
+                  <option value="Manipur">Manipur</option>
+                  <option value="Meghalaya">Meghalaya</option>
+                  <option value="Mizoram">Mizoram</option>
+                  <option value="Nagaland">Nagaland</option>
+                  <option value="Odisha">Odisha</option>
+                  <option value="Punjab">Punjab</option>
+                  <option value="Rajasthan">Rajasthan</option>
+                  <option value="Sikkim">Sikkim</option>
+                  <option value="Tamil Nadu">Tamil Nadu</option>
+                  <option value="Telangana">Telangana</option>
+                  <option value="Tripura">Tripura</option>
+                  <option value="Uttar Pradesh">Uttar Pradesh</option>
+                  <option value="Uttarakhand">Uttarakhand</option>
+                  <option value="West Bengal">West Bengal</option>
+                </select>
+              </p>
+            </div>
+            <div class="col-md-6">
+              <p>
+                <label for="" class="form-label text-dark"
+                  >LinkedIn Profile *</label
+                >
+                <input
+                  type="text"
+                  name="linkedin"
+                  placeholder="Linkedin"
+                  id="linkedin"
+                />
+                <span id="error-linkedin"></span>
+              </p>
+            </div>
+            <div class="col-md-6">
+              <p>
+                <label for="" class="form-label text-dark"
+                  >Upload profile picture *</label
+                >
+                <input type="file" name="" placeholder="Upload Profile" id="" />
+                <span id="error-linkedin"></span>
+              </p>
+            </div>
+            <div class="col-md-6">
+              <p>
+                <label for="" class="form-label text-dark">User Name *</label>
+                <input type="text" name="" placeholder="User Name" id="" />
+                <span id="error-fname"></span>
+              </p>
+            </div>
+            <div class="col-md-6">
+              <p>
+                <label for="" class="form-label text-dark">Password *</label>
+                <input
+                  type="password"
+                  name="pass"
+                  placeholder="Password"
+                  id="pass"
+                />
+                <span id="error-pass"></span>
+              </p>
+            </div>
+
+            <div class="col-md-6">
+              <p>
+                <label for="" class="form-label text-dark"
+                  >Confirm Password *</label
+                >
+                <input
+                  type="password"
+                  name="cpass"
+                  placeholder="Confirm Password"
+                  id="cpass"
+                />
+                <span id="error-cpass"></span>
+              </p>
+            </div>
+            <div class="col-md-6">
+              <p>
+                <label for="" class="form-label text-dark"
+                  >Change Password *</label
+                >
+                <input
+                  type="password"
+                  name=""
+                  placeholder="Change Password"
+                  id=""
+                />
+                <span id="error-cpass"></span>
+              </p>
+            </div>
+            <div class="col-md-6">
+              <p>
+                <label for="" class="form-label text-dark">Website *</label>
+                <input type="text" name="" placeholder="Website" id="" />
+                <span id="error-cpass"></span>
+              </p>
+            </div>
+            <div class="col-md-12">
+              <label for="" class="form-label text-dark">
+                Profile Summary *</label
+              >
+              <textarea
+                name=" Profile_Summary"
+                required
+                class="form-control"
+                id=""
+                style="height: 80px"
+                placeholder=" Profile Summary"
+              ></textarea>
+            </div>
+          </div>
+
+          <p class="nxt-prev-button">
+            <input
+              type="button"
+              name="next"
+              class="fs_next_btn action-button"
+              value="Next"
+            />
+          </p>
+        </div>
+        <!-- Step 02 -->
+
+        <div class="multistep-box">
+          <div class="title-box">
+            <h2>Please tell us about your investment thesis</h2>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <p>
+                <label for="" class="form-label text-dark">
+                  Do you prefer to invest in particular sectors? *</label
+                >
+                <select
+                  class="form-control form-select"
+                  id="stage"
+                  name="stage"
+                  required
+                >
+                  <option value="0">--Select stage--</option>
+                  <option value="1">Sector agnostic</option>
+                  <option value="2">a</option>
+                  <option value="3">b</option>
+                  <option value="4">c</option>
+                  <option value="5">d</option>
+                </select>
+                <span id="error-facebook"></span>
+              </p>
+            </div>
+            <div class="col-md-12">
+              <p>
+                <label for="" class="form-label text-dark"
+                  >Do you prefer to come-in at a particular stage? *</label
+                >
+                <select
+                  class="form-control form-select"
+                  id="facebook"
+                  name="stage"
+                  required
+                >
+                  <option value="">--Select stage--</option>
+                  <option value="Sector_agnostic">Sector agnostic</option>
+                  <option value="">...</option>
+                  <option value="">...</option>
+                </select>
+                <span id="error-facebook"></span>
+              </p>
+            </div>
+            <div class="col-md-12">
+              <p>
+                <label for="" class="form-label text-dark"
+                  >Do you have an upper cap on investment amount? *</label
+                >
+                <select
+                  class="form-control form-select"
+                  id="amount"
+                  name="amount"
+                  required
+                >
+                  <option value="">--Select amount--</option>
+                  <option value="No_Investment_cap">No Investment cap</option>
+                  <option value="">...</option>
+                  <option value="">...</option>
+                </select>
+                <span id="error-twitter"></span>
+              </p>
+            </div>
+            <div class="col-md-12">
+              <p>
+                <label for="" class="form-label text-dark"
+                  >Do you have preference in terms of type of investment?
+                  *</label
+                >
+                <select
+                  class="form-control form-select"
+                  id="investment"
+                  name="investment"
+                  required
+                >
+                  <option value="">--Select investment--</option>
+                  <option value="Equity_Investments">Equity Investments</option>
+                  <option value="Venture_Debt_Instruments ">
+                    Venture Debt / Debt Instruments
+                  </option>
+                  <option value="CCPS_Convertible_Notes">
+                    CCPS / Convertible Notes
+                  </option>
+                  <option value="I_am_flexible">I am flexible</option>
+                </select>
+                <span id="error-twitter"></span>
+              </p>
+            </div>
+            <div class="col-md-12">
+              <p>
+                <label for="" class="form-label text-dark"
+                  >Are you looking to provide only capital to the investee
+                  company? *</label
+                >
+                <select
+                  class="form-control form-select"
+                  id="investee_company"
+                  name="investee_company"
+                  required
+                >
+                  <option value="">--Select investee company--</option>
+                  <option value="Only_financial_involvement">
+                    Yes - Only financial involvement
+                  </option>
+                  <option value="I_prefer_to_be_strategic  ">
+                    I prefer to be a strategic investor where I can add value to
+                    the company
+                  </option>
+                </select>
+                <span id="error-twitter"></span>
+              </p>
+            </div>
+            <div class="col-md-12">
+              <p>
+                <label for="" class="form-label text-dark">
+                  Anything else you would want us to know? *</label
+                >
+                <textarea
+                  name=" address"
+                  id="address"
+                  required
+                  class="form-control"
+                  style="height: 80px"
+                  placeholder="Anything else ..."
+                ></textarea>
+                <span id="error-address"></span>
+              </p>
+            </div>
+          </div>
+
+          <p class="nxt-prev-button">
+            <input
+              type="button"
+              name="previous"
+              class="previous action-button"
+              value="Previous"
+            />
+            <input
+              type="button"
+              name="next"
+              class="ss_next_btn action-button"
+              value="Next"
+            />
+          </p>
+        </div>
+        <!-- Step 03 -->
+
+        <div class="multistep-box">
+          <div class="title-box">
+            <h2>Please tell us a bit about yourselfs</h2>
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <p>
+                <label for="" class="form-label text-dark"
+                                >What type of investor are you? *</label
+                              >
+                              <select
+                              class="form-control form-select"
+                              id="type_of_investor"
+                              name="type_of_investor"
+                              required
+                            >
+                              <option value="">
+                                --Select type of investor--
+                              </option>
+                              <option value="Individual_Angel_Investor">
+                                Individual / Angel Investor
+                              </option>
+                              <option value="Venture_Capital_firm  ">
+                                Part of a Venture Capital firm / Investment
+                                team
+                              </option>
+                              <option value="Part_of_PE_firm  ">
+                                Part of a PE firm
+                              </option>
+                              <option value="Family_Office  ">
+                                Family Office / Multi-family office
+                              </option>
+                              <option value="Investment_platform  ">
+                                Investment platform / angel investor network
+                              </option>
+                              <option value="Something_else  ">
+                                Something else
+                              </option>
+                            </select>
+                <span id="error-facebook"></span>
+              </p>
+            </div>
+            <div class="col-md-6">
+              <p>
+                <label for="" class="form-label text-dark"
+                >Have you made investments in startups before?
+                *</label
+              >
+              <select
+              class="form-control form-select"
+              id="investments"
+              name="investments"
+              required
+            >
+              <option value="">
+                --Select type of investments--
+              </option>
+              <option value="yes">Yes</option>
+              <option value="no  ">No</option>
+            </select>
+                <span id="error-facebook"></span>
+              </p>
+            </div>
+            <div class="col-md-6">
+              <p>
+                <label for="" class="form-label text-dark"
+                                >Are you okay to becoming a ‘lead investor’
+                                *</label
+                              >
+                              <select
+                              class="form-control form-select"
+                              id="lead_investor"
+                              name="lead_investor"
+                              required
+                            >
+                              <option value="">
+                                --Select lead investor--
+                              </option>
+                              <option value="yes">Yes</option>
+                              <option value="no  ">No</option>
+                              <option value="Can’t_sure">
+                                Can’t answer for sure
+                              </option>
+                            </select>
+                <span id="error-twitter"></span>
+              </p>
+            </div>
+            <div class="col-md-6">
+              <p>
+                <label for="" class="form-label text-dark"
+                                >Multiselect Droupdown *</label
+                              >
+                              <div class="">
+                                <div class="apply-filter-menu">
+                                  <div class="btn-group">
+                                    <button
+                                      class="btn btn-outline-steeper dropdown-toggle"
+                                      type="button"
+                                      data-bs-toggle="dropdown"
+                                      data-bs-auto-close="true"
+                                      aria-expanded="false"
+                                    >
+                                      select options
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                      <li class="with-checkbox">
+                                        <div class="steeper_checkbox">
+                                          <input
+                                            class="form-check-input"
+                                            type="checkbox"
+                                            value=""
+                                            id="flexCheckChecked"
+                                            checked
+                                          />
+                                          <label
+                                            class="form-check-label"
+                                            for="flexCheckChecked"
+                                          >
+                                            option 01
+                                          </label>
+                                        </div>
+                                      </li>
+                                      <li class="with-checkbox">
+                                        <div class="form-check">
+                                          <input
+                                            class="form-check-input"
+                                            type="checkbox"
+                                            value=""
+                                            id="flexCheckChecked"
+                                          />
+                                          <label
+                                            class="form-check-label"
+                                            for="flexCheckChecked"
+                                          >
+                                            option 02
+                                          </label>
+                                        </div>
+                                      </li>
+                                      <li class="with-checkbox">
+                                        <div class="form-check">
+                                          <input
+                                            class="form-check-input"
+                                            type="checkbox"
+                                            value=""
+                                            id="flexCheckChecked"
+                                          />
+                                          <label
+                                            class="form-check-label"
+                                            for="flexCheckChecked"
+                                          >
+                                            option 03
+                                          </label>
+                                        </div>
+                                      </li>
+                                      <li class="with-checkbox">
+                                        <div class="form-check">
+                                          <input
+                                            class="form-check-input"
+                                            type="checkbox"
+                                            value=""
+                                            id="flexCheckChecked"
+                                          />
+                                          <label
+                                            class="form-check-label"
+                                            for="flexCheckChecked"
+                                          >
+                                            Show All
+                                          </label>
+                                        </div>
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </div>
+                <span id="error-twitter"></span>
+              </p>
+            </div>
+           
+          </div>
+
+          <p class="nxt-prev-button">
+            <input
+              type="button"
+              name="previous"
+              class="previous action-button"
+              value="Previous"
+            />
+            <input
+              type="button"
+              name="next"
+              class="ss_next_btn action-button"
+              value="Next"
+            />
+          </p>
+        </div>
+        <!-- Step 04 -->
+
+        <div class="multistep-box">
+          <div class="title-box">
+            <h2>   “About your association with IIA”</h2>
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <p>
+                <label for="" class="form-label text-dark"
+                >How did you hear about IIA *</label
+              >
+              <select
+              class="form-control form-select"
+              id="about_IIA"
+              name="about_IIA"
+              required
+            >
+              <option value="">--Select type of IIA--</option>
+              <option value="">
+                Know the partners personally
+              </option>
+              <option value="">
+                Met IIA team at an event (Online / offline)
+              </option>
+              <option value="">
+                Someone recommended IIA to me
+              </option>
+              <option value="">LinkedIn Connect</option>
+              <option value="">
+                Web Search / Bumped into your website
+              </option>
+            </select>
+                <span id="error-facebook"></span>
+              </p>
+            </div>
+            <div class="col-md-6">
+              <p>
+                <label for="" class="form-label text-dark"
+                >Let’s understand your requirements /
+                expectations from IIA (Check all that apply)
+                *</label
+              >
+              <select
+              class="form-control form-select"
+              id="expectations_IIA"
+              name="expectations_IIA"
+              required
+            >
+              <option value="">
+                --Select expectations from IIA--
+              </option>
+              <option value="">
+                I expect IIA to provide me a deal-flow that I
+                can look at
+              </option>
+              <option value="  ">
+                I would like IIA to help me find co-investors
+                for my investment
+              </option>
+              <option value="  ">
+                I would love to read about industry specific
+                research / blogs / podcasts to better manage
+                my investments
+              </option>
+              <option value="  ">
+                I would like to leverage IIA to grow my
+                portfolio companies (Market Access)
+              </option>
+              <option value="  ">
+                I would like to leverage IIA’s mentor network
+                for my portfolio companies (SME Pool)
+              </option>
+              <option value="  ">
+                I would like to mentor startups in IIA
+                portfolio
+              </option>
+              <option value="  ">
+                I would like to contribute to the community
+                through events / webinars
+              </option>
+            </select>
+                <span id="error-facebook"></span>
+              </p>
+            </div>
+            <div class="col-md-6">
+              <p>
+                <label for="" class="form-label text-dark"
+                >What would be your preferred mode of
+                communication? *</label
+              >
+              <select
+              class="form-control form-select"
+              id="lead_investor"
+              name="lead_investor"
+              required
+            >
+              <option value="">
+                --Select lead investor--
+              </option>
+              <option value="WhatsApp">WhatsApp</option>
+              <option value="Email   ">Email</option>
+              <option value="EmailःWhatsApp">
+                Both Email & WhatsApp
+              </option>
+            </select>
+                <span id="error-twitter"></span>
+              </p>
+            </div>
+            <div class="col-md-6">
+              <p>
+                <label for="" class="form-label text-dark">
+                  Something else *</label
+                >
+                <textarea
+                name="anything"
+                id="anything"
+                required
+                class="form-control"
+                style="height: 80px"
+                placeholder="  Something else ..."
+              ></textarea>
+                <span id="error-anything"></span>
+              </p>
+            </div>
+           
+          </div>
+
+          <p class="nxt-prev-button">
+            <input
+              type="button"
+              name="previous"
+              class="previous action-button"
+              value="Previous"
+            />
+            <input
+              type="button"
+              name="next"
+              class="ss_next_btn action-button"
+              value="Next"
+            />
+          </p>
+        </div>
+      
+      </form>
+      <h1>You are successfully logged in</h1>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+      crossorigin="anonymous"
+    ></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.0/jquery.easing.js"
+      type="text/javascript"
+    ></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
